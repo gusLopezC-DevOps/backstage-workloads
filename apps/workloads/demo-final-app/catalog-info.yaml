@@ -6,7 +6,7 @@ metadata:
   annotations:
     backstage.io/kubernetes-id: demo-final-app
     backstage.io/kubernetes-namespace: workloads
-    janus-idp.io/kyverno: enabled
+    kyverno.io/resource-name: demo-final-app
 spec:
   type: service
   lifecycle: experimental
