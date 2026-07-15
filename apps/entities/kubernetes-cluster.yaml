@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: kubernetes-cluster
+  description: Main Kubernetes cluster
+  annotations:
+    kyverno.io/endpoint: http://policy-reporter.workloads.svc:8080
+spec:
+  type: kubernetes-cluster
+  owner: development
+  system: infrastructure

@@ -11,3 +11,5 @@ spec:
   type: service
   lifecycle: experimental
   owner: development
+  dependsOn:
+    - resource:default/kubernetes-cluster
