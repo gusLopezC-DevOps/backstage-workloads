@@ -1,0 +1,13 @@
+apiVersion: example.crossplane.io/v1alpha1
+kind: LocalDeployment
+metadata:
+  name: test-golden-path2
+  namespace: workloads
+  labels:
+    backstage.io/kubernetes-id: test-golden-path2
+spec:
+  parameters:
+    image: nginx:1.27-alpine
+    hostname: test-golden2.local
+    port: 80
+    replicas: 1

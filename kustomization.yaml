@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - apps/workloads/test-golden-path
   - apps/workloads/demo-final-app
+  - apps/workloads/test-golden-path2
