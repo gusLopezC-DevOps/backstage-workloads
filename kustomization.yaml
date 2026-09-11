@@ -1,6 +1,8 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-resources:
-  - apps/workloads/test-golden-path
-  - apps/workloads/demo-final-app
-  - apps/workloads/test-golden-path2
+resources: []
+# Solo permanecen apps/entities/* (entidades de catálogo Backstage).
+# Los claims crossplane legacy (demo-final-app, test-golden-path, test-golden-path2)
+# fueron eliminados del catálogo y de este repo (eran obsoletos).
+# Para un nuevo claim crossplane, el template k8s-manifests escribe en
+# apps/workloads/<appName> y se aplica con: kubectl -k apps/workloads/<appName>
